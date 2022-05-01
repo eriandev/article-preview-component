@@ -1,5 +1,5 @@
 :root {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 @tailwind base;
@@ -7,149 +7,149 @@
 @tailwind utilities;
 
 body {
-    @apply flex flex-wrap content-center justify-center text-dark-gray-blue bg-light-gray-blue font-manrope;
-    min-height: 100vh;
+  @apply flex flex-wrap content-center justify-center text-dark-gray-blue bg-light-gray-blue font-manrope;
+  min-height: 100vh;
 }
 
 ::selection {
-    @apply text-white bg-erian-color;
+  @apply text-white bg-erian-color;
 }
 
 ::-moz-selection {
-    @apply text-white bg-erian-color;
+  @apply text-white bg-erian-color;
 }
 
 main {
-    @apply container flex justify-center w-full;
+  @apply container flex justify-center w-full;
 }
 
 .card {
-    @apply relative grid max-w-md shadow-lg lg:max-w-5xl rounded-xl;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
+  @apply relative grid max-w-md shadow-lg lg:max-w-5xl rounded-xl;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
 }
 
 .card-image {
-    @apply w-full;
+  @apply w-full;
 }
 
 .card-image img {
-    @apply w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl;
+  @apply w-full rounded-t-xl lg:rounded-t-none lg:rounded-l-xl;
 }
 
 .card-content {
-    @apply bg-white rounded-b-xl lg:rounded-b-none lg:rounded-r-xl;
+  @apply bg-white rounded-b-xl lg:rounded-b-none lg:rounded-r-xl;
 }
 
 .card-emphasis {
-    @apply px-10 pt-10 text-xl font-bold lg:text-2xl;
+  @apply px-10 pt-10 text-xl font-bold lg:text-2xl;
 }
 
 .card-body {
-    @apply px-10 pt-6 text-desa-dark-blue;
+  @apply px-10 pt-6 text-desa-dark-blue;
 }
 
 .card-footer {
-    @apply flex flex-wrap items-center justify-between px-10 pt-6 pb-6 mt-6 rounded-b-xl;
+  @apply flex flex-wrap items-center justify-between px-10 pt-6 pb-6 mt-6 rounded-b-xl;
 }
 
 .card-author-date {
-    @apply flex justify-start w-3/4;
+  @apply flex justify-start w-3/4;
 }
 
 .card-author-date img {
-    @apply inline w-12 h-12 rounded-full select-none;
+  @apply inline w-12 h-12 rounded-full select-none;
 }
 
 .card-info {
-    @apply flex flex-col w-2/3 ml-6;
+  @apply flex flex-col w-2/3 ml-6;
 }
 
 .card-info h3 {
-    @apply font-bold;
+  @apply font-bold;
 }
 
 .card-info span {
-    @apply text-gray-blue;
+  @apply text-gray-blue;
 }
 
 .button-share {
-    @apply z-20 w-10 h-10 border-none rounded-full outline-none select-none bg-light-gray-blue;
-    -webkit-tap-highlight-color: transparent;
-    color: #6E8098;
+  @apply z-20 w-10 h-10 border-none rounded-full outline-none select-none bg-light-gray-blue;
+  -webkit-tap-highlight-color: transparent;
+  color: #6E8098;
 }
 
 .button-share svg {
-    @apply mx-auto;
+  @apply mx-auto;
 }
 
 .active {
-    @apply text-white bg-desa-dark-blue;
+  @apply text-white bg-desa-dark-blue;
 }
 
 button:focus {
-    @apply border-none outline-none;
+  @apply border-none outline-none;
 }
 
 .toltip-share {
-    @apply absolute bottom-0 left-0 z-10 flex w-full pl-10 bg-dark-gray-blue rounded-b-xl;
-    height: 78px;
+  @apply absolute bottom-0 left-0 z-10 flex w-full pl-10 bg-dark-gray-blue rounded-b-xl;
+  height: 78px;
 }
 
 .toltip-title {
-    @apply self-center inline mr-4 uppercase select-none text-gray-blue;
-    letter-spacing: 0.5em;
+  @apply self-center inline mr-4 uppercase select-none text-gray-blue;
+  letter-spacing: 0.5em;
 }
 
 .toltip-social-share {
-    @apply self-center inline mx-3 border-none cursor-pointer select-none;
+  @apply self-center inline mx-3 border-none cursor-pointer select-none;
 }
 
 .attribution {
-    @apply w-full mt-4 text-sm text-center;
+  @apply w-full mt-4 text-sm text-center;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+  color: hsl(228, 45%, 44%); 
 }
 
 .attribution span {
-    @apply text-erian-color hover:text-erian-hover;
+  @apply text-erian-color hover:text-erian-hover;
 }
 
 
 
 @screen lg {
-    .card {
-        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-        grid-template-rows: auto;
-    }
+  .card {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    grid-template-rows: auto;
+  }
 
-    .toltip-share {
-        @apply absolute w-auto px-10 py-6 shadow-xl rounded-xl bg-dark-gray-blue;
-        left: auto;
-        width: 251px;
-        height: 59px;
-        top: 120px;
-        right: -75px;
-    }
+  .toltip-share {
+    @apply absolute w-auto px-10 py-6 shadow-xl rounded-xl bg-dark-gray-blue;
+    left: auto;
+    width: 251px;
+    height: 59px;
+    top: 120px;
+    right: -75px;
+  }
 
-    .toltip-share::after {
-        @apply absolute left-0 right-0 mx-auto bg-dark-gray-blue;
-        content: '';
-        width: 32px;
-        height: 16px;
-        bottom: -16px;
-        transform: rotate(180deg);
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    }
+  .toltip-share::after {
+    @apply absolute left-0 right-0 mx-auto bg-dark-gray-blue;
+    content: '';
+    width: 32px;
+    height: 16px;
+    bottom: -16px;
+    transform: rotate(180deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
 
-    .toltip-title {
-        @apply self-center inline mr-4 uppercase select-none text-gray-blue;
-        letter-spacing: 0.5em;
-    }
+  .toltip-title {
+    @apply self-center inline mr-4 uppercase select-none text-gray-blue;
+    letter-spacing: 0.5em;
+  }
 
-    .toltip-social-share {
-        @apply inline mx-2 border-none cursor-pointer select-none;
-    }
+  .toltip-social-share {
+    @apply inline mx-2 border-none cursor-pointer select-none;
+  }
 }
