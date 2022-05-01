@@ -1,33 +1,18 @@
 {
   "name": "article-preview-component",
-  "version": "1.0.0",
   "description": "Challenge #5 by frontendmentor.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/erianvc/article-preview-component.git"
-  },
-  "main": "public/index.html",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
     "watch": "postcss src/tailwind.css -o public/global.css -w",
     "build": "cross-env NODE_ENV=production postcss src/tailwind.css -o public/global.css && npm run js:minify",
     "js:minify": "npx terser src/*.js -c -m toplevel -o public/app.js"
   },
-  "keywords": [
-    "tailwindcss",
-    "frontend",
-    "challenge"
-  ],
-  "author": "erianvc",
-  "bugs": {
-    "url": "https://github.com/erianvc/article-preview-component/issues"
-  },
-  "homepage": "https://github.com/erianvc/article-preview-component#readme",
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.2",
-    "tailwindcss": "^1.8.10",
-    "terser": "^5.3.3"
+    "cross-env": "7.0.3",
+    "cssnano": "5.1.7",
+    "postcss-cli": "9.1.0",
+    "tailwindcss": "3.0.24",
+    "terser": "5.13.1"
   }
 }
