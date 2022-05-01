@@ -1,10 +1,8 @@
+@import 'tailwindcss/base';
+
 :root {
   font-size: 13px;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 body {
   @apply flex flex-wrap content-center justify-center text-dark-gray-blue bg-light-gray-blue font-manrope;
@@ -85,6 +83,10 @@ main {
 
 .active {
   @apply text-white bg-desa-dark-blue;
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 button:focus {
